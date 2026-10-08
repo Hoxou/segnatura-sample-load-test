@@ -1,0 +1,11 @@
+# Local overrides; .env.example is the committed template.
+.env
+.env.*
+!.env.example
+
+# k6 output files
+*.json
+*.csv
+summary.html
+
+.DS_Store

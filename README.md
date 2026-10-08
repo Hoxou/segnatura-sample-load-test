@@ -21,7 +21,8 @@ In Segnatura, add it as a script with an empty folder path, no setup command and
 ## Target
 
 The default target is `https://test.k6.io`, which now redirects to Grafana's QuickPizza demo.
-Point it elsewhere with the optional `TARGET_URL` variable (see `.env.example`):
+Point it elsewhere with the optional `TARGET_URL` variable. It is listed commented out in
+`.env.example`, because Segnatura's machine agent treats every uncommented key there as required:
 
 ```sh
 k6 run -e TARGET_URL=https://example.com load-test.js
